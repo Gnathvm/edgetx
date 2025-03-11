@@ -143,6 +143,11 @@ void boardInit()
   board_set_bor_level();
 #endif
 
+#if defined(MANUFACTURER_GN) && defined(STM32F407xx)
+  void board_set_bor_level();
+  board_set_bor_level();
+#endif
+
   board_trainer_init();
 
   // Sets 'hardwareOption.pcbrev' as well
@@ -167,7 +172,7 @@ void boardInit()
 
 #if defined(STATUS_LEDS)
   ledInit();
-#if !defined(POWER_LED_BLUE) && (defined(MANUFACTURER_RADIOMASTER) || defined(MANUFACTURER_JUMPER) || defined(RADIO_COMMANDO8))
+#if !defined(POWER_LED_BLUE) && (defined(MANUFACTURER_RADIOMASTER) || defined(MANUFACTURER_JUMPER) || defined(RADIO_COMMANDO8) || defined(RADIO_GN))
   ledBlue();
 #else
   ledGreen();
@@ -315,6 +320,10 @@ void boardOff()
 #endif
 
 #if defined(MANUFACTURER_RADIOMASTER) && defined(STM32F407xx)
+  lcdInit(); 
+#endif
+
+#if defined(MANUFACTURER_GN) && defined(STM32F407xx)
   lcdInit(); 
 #endif
 
