@@ -1359,7 +1359,7 @@ void setPotType(int index, int value)
   g_eeGeneral.potsConfig = bfSet<potconfig_t>(g_eeGeneral.potsConfig, value, (POT_CFG_BITS * index), POT_CFG_TYPE_BITS);
 }
 
-#if defined(NAVIGATION_X7) || defined(NAVIGATION_X9D)
+#if defined(NAVIGATION_G7) ||defined(NAVIGATION_X7) || defined(NAVIGATION_X9D)
 uint8_t MENU_FIRST_LINE_EDIT(const uint8_t * horTab, uint8_t horTabMax)
 {
   if (horTab) {

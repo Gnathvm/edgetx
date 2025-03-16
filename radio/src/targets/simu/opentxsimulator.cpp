@@ -949,6 +949,8 @@ class OpenTxSimulatorFactory: public SimulatorFactory
       return Board::BOARD_TARANIS_X7_ACCESS;
 #elif defined(PCBX7)
       return Board::BOARD_TARANIS_X7;
+#elif defined(PCBG7)
+      return Board::BOARD_GN_HAZEL;      
 #elif defined(PCBX9LITES)
       return Board::BOARD_TARANIS_X9LITES;
 #elif defined(PCBX9LITE)

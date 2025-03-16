@@ -7,6 +7,9 @@ boards = {
     "XLITES": {
         "PCB": "XLITES",
     },
+    "G7": {
+        "PCB": "G7",
+    },
     "X9LITE": {
         "PCB": "X9LITE",
     },

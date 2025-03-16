@@ -124,7 +124,7 @@ case $RADIO_TYPE in
         BUILD_OPTIONS+=" -DPCB=X7 -DPCBREV=COMMANDO8"
         ;;
     hazel)
-       BUILD_OPTIONS+=" -DPCB=X7 -DPCBREV=HAZEL"
+       BUILD_OPTIONS+=" -DPCB=G7 -DPCBREV=HAZEL"
        ;;   
     *)
         echo "Unknown target: $RADIO_TYPE"

@@ -200,7 +200,7 @@ def main():
         firmware_options = options_fatfish_f16
         maxsize = 2 * 1024 * 1024
     elif board_name == "hazel":
-        cmake_options["PCB"] = "X7"
+        cmake_options["PCB"] = "G7"
         cmake_options["PCBREV"] = "HAZEL"
         firmware_options = options_gn_hazel
         maxsize = 65536 * 8     

@@ -162,6 +162,8 @@ extern HardwareOptions hardwareOptions;
   #define BATT_SCALE                    131
 #elif defined(PCBX7)
   #define BATT_SCALE                    123
+#elif defined(PCBG7)
+  #define BATT_SCALE                    123  
 #elif defined(PCBX9LITE)
   #define BATT_SCALE                    117
 #elif defined(RADIO_X9DP2019)

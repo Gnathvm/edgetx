@@ -11,7 +11,7 @@ import tempfile
 boards = {
     
     "HAZEL": {
-        "PCB": "X7",
+        "PCB": "G7",
         "PCBREV": "HAZEL",
         "DEFAULT_MODE": "2",
     }
